@@ -32,6 +32,8 @@ public class AyushController {
 	static Information info = new Information();
 	static List<Information> list = new ArrayList<>();
 	
+	
+	
 	@GetMapping("getName")
 	public ResponseEntity getName() {
 		return new ResponseEntity<>(info.getName(),HttpStatus.OK);
